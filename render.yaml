@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: apdigi-activations
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
