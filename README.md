@@ -1,6 +1,6 @@
 # Apdigi Activations
 
-A responsive, four-page website for Apdigi Activations, built with plain HTML, CSS and JavaScript.
+A responsive, single-page website for Apdigi Activations, built with plain HTML, CSS and JavaScript.
 
 ## Run locally
 
@@ -10,14 +10,16 @@ Open `index.html` in a browser, or open the project in VS Code and use the Live 
 
 This repository includes a `render.yaml` Blueprint for a Render Static Site. Push the project to a Git provider, then in Render choose **New > Blueprint** and connect the repository containing `render.yaml`. Render will publish the repository root; no build command or dependencies are needed.
 
-Alternatively, create a Static Site in the Render Dashboard and set the publish directory to `.` with the build command left blank. The site is multi-page, so use the `.html` page URLs for Home, About, Services, and Contact.
+Alternatively, create a Static Site in the Render Dashboard and set the publish directory to `.` with the build command left blank.
 
 ## Pages
 
-- Home: `index.html`
-- About Us: `about.html`
-- Services: `services.html`
-- Contact: `contact.html`
+- Home: `index.html#home`
+- About Us: `index.html#about`
+- Services: `index.html#services`
+- Contact: `index.html#contact`
+
+The previous `about.html`, `services.html`, and `contact.html` URLs redirect visitors to their matching sections on the homepage.
 
 ## Enquiry form
 
