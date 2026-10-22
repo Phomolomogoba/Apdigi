@@ -22,10 +22,7 @@ button, input, textarea, select { font: inherit; }
 .skip-link:focus { transform: none; }
 .site-header { position: relative; z-index: 10; display: flex; min-height: 82px; align-items: center; justify-content: space-between; padding: 0 6.1%; border-bottom: 1px solid var(--line); background: var(--black); }
 .brand { display: inline-flex; align-items: center; gap: 10px; flex: 0 0 auto; }
-.brand-mark { display: grid; width: 37px; height: 37px; place-items: center; border: 2px solid var(--yellow); color: var(--white); font: 800 24px/.9 var(--display); }
-.brand-mark span { color: var(--yellow); }
-.brand-name { display: flex; flex-direction: column; font-size: 12px; font-weight: 700; line-height: 1.1; letter-spacing: .08em; }
-.brand-name b { color: var(--yellow); font-size: 9px; letter-spacing: .16em; }
+.brand img { width: 148px; height: auto; }
 .primary-nav { display: flex; height: 82px; align-items: center; gap: clamp(20px, 3vw, 48px); }
 .primary-nav > a:not(.nav-cta) { position: relative; color: var(--muted); font-size: 12px; font-weight: 600; transition: color .2s ease; }
 .primary-nav > a:not(.nav-cta)::after { position: absolute; right: 0; bottom: -7px; left: 0; height: 1px; transform: scaleX(0); transform-origin: left; background: var(--yellow); content: ""; transition: transform .2s ease; }
@@ -193,6 +190,7 @@ h1 em, h2 em { color: var(--yellow); font-style: normal; }
 }
 @media (max-width: 680px) {
   .site-header { min-height: 70px; padding: 0 6%; }
+  .brand img { width: 128px; }
   .menu-toggle { display: flex; width: 42px; height: 42px; flex-direction: column; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--line); background: transparent; cursor: pointer; }
   .menu-toggle span { width: 17px; height: 1px; background: var(--yellow); transition: transform .2s; }
   .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3.5px) rotate(45deg); }
